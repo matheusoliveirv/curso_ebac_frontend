@@ -1,0 +1,108 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #1E2F36;
+}
+h1{
+  color: #FFF;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+input{
+    width: 15rem;
+    height: 3rem;
+    padding: 0 1rem;
+    background-color: transparent;
+    border: .15rem solid #FFF;
+    border-radius: 0 .8rem 0 .8rem;
+    color: #FFF;
+    font-size: 1rem;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
+}
+/*ALTERNANDO O PLACEHOLDER*/
+.placeArea{
+    position: relative;
+}
+label{
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+    font-size: .95rem;
+    color: #BBB;
+    transition: ease-in-out .2s;
+    opacity: 1;
+    pointer-events: none;
+}
+input:focus + label,
+input:valid + label{
+    background-color: #1E2F36;
+    color: #80DF9D;
+    font-size: .72rem;
+    top: -10px;
+    padding: 0 .2rem;
+}
+ input:focus{
+    box-shadow: 0 0 0 0;
+    border: .15rem solid #80DF9D;
+    outline: 0;
+}
+textarea:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button.validarDados{
+    width: 15rem;
+    height: 3rem;
+    background-image: linear-gradient(to right, #80DF9D, #41C6A9);
+    color: #FFF;
+    border: none;
+    border-radius: 0 .8rem 0 .8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.valido{
+    color: #52DC89;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.invalido{
+    color: #eb646a;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
