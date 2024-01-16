@@ -1,10 +1,11 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -14,15 +15,18 @@
     gap: 2rem;
     background-color: #1E2F36;
 }
-h1{
-  color: #FFF;
+
+h1 {
+    color: #FFF;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-input{
+
+input {
     width: 15rem;
     height: 3rem;
     padding: 0 1rem;
@@ -32,14 +36,17 @@ input{
     color: #FFF;
     font-size: 1rem;
 }
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;   
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
+
 /*ALTERNANDO O PLACEHOLDER*/
-.placeArea{
+.placeArea {
     position: relative;
 }
-label{
+
+label {
     position: absolute;
     left: 1rem;
     top: .8rem;
@@ -49,43 +56,30 @@ label{
     opacity: 1;
     pointer-events: none;
 }
-input:focus + label,
-input:valid + label{
+
+input:focus+label,
+input:valid+label {
     background-color: #1E2F36;
     color: #80DF9D;
     font-size: .72rem;
     top: -10px;
     padding: 0 .2rem;
 }
- input:focus{
+
+input:focus {
     box-shadow: 0 0 0 0;
     border: .15rem solid #80DF9D;
     outline: 0;
 }
-textarea:focus, select:focus {
+
+textarea:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-button.validarDados{
+button.validarDados {
     width: 15rem;
     height: 3rem;
     background-image: linear-gradient(to right, #80DF9D, #41C6A9);
@@ -96,12 +90,14 @@ button.validarDados{
     font-weight: 500;
     cursor: pointer;
 }
-.valido{
+
+.valido {
     color: #52DC89;
     font-size: 1.1rem;
     font-weight: 500;
 }
-.invalido{
+
+.invalido {
     color: #eb646a;
     font-size: 1.1rem;
     font-weight: 500;
