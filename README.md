@@ -1,6 +1,5 @@
 <h1>
-    <a href="https://www.dio.me/">
-     <img align="center" height="42px" src="https://new.lms.ebaconline.com.br/_nuxt/img/ebac-logo-white.30dcbfc.svg"></a>
+     <img align="center" height="42px" src="https://new.lms.ebaconline.com.br/_nuxt/img/ebac-logo-white.30dcbfc.svg">
     <span>Engenheiro Front-end - EBAC</span>
 </h1>
 
