@@ -1,0 +1,26 @@
+:root{
+    /*LIGHT MODE*/
+    --light-bg: #FFF;
+    --light-container: #DDD;
+    --light-font: #1A202B;
+    --light-icon: #F2C138;
+
+    /*DARK MODE*/
+    --dark-bg: #1A202B;
+    --dark-container: #2C313C;
+    --dark-font: #CCC;
+    --dark-btn: #A9DDF8;
+}
+
+.lightMode{
+    background-color: var(--light-bg);
+    color: var(--ligh-font);
+}
+.lightModeContainer{
+    background-color: var(--light-container) !important;
+    color: var(--ligh-font) !important;
+}
+.lightModeIcon{
+    background-color: var(--light-icon) !important;
+    color: var(--light-bg) !important;
+}
