@@ -59,10 +59,10 @@ header .newTodo input{
     padding: .8rem 1rem;
     width: 20rem;
     color: var(--dark-font);
-}
-header .newTodo input:focus{
-    border: none;
-    outline: 0;
+    &:focus{
+        border: none;
+        outline: 0;
+        }
 }
 header .newTodo button.btnAdd{
     background-color: var(--dark-btn);
@@ -99,13 +99,24 @@ ul{
 li{
     width: 40vw;
     list-style-type: none;
-    padding: 1rem 0;
-    /*border: 1px solid green;*/
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 ul li p{
     cursor: pointer;
+    font-weight: 600;
 }
 
 .check{
     text-decoration: line-through;
+}
+.remove{
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #FDA1A1;
+    transition: all ease .2s;
+    &:hover{
+        color: #FF8080;
+    }
 }

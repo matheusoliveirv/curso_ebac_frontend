@@ -4,12 +4,17 @@ $(document).ready(function () {
         const novaTarefa = $('#inserir').val()
         const novoItem = $('<li></li>')
         $(`<p>${novaTarefa}</p>`).appendTo(novoItem)
+        $(`<span class="remove"><i class="fa-solid fa-trash-can-arrow-up"></i></span>`).appendTo(novoItem)
         $(novoItem).appendTo('ul')
         $('#inserir').val('') //CLEAN FORM
 
         
         $('p').click(function(){
             $(this).addClass('check')
+        })
+
+        $('.remove').click(function(){
+            $(this).parent().remove()
         })
     })
 
