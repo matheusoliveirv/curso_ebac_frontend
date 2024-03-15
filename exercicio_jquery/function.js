@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(`<p>${novaTarefa}</p>`).appendTo(novoItem)
         $(`<span class="remove"><i class="fa-solid fa-trash-can-arrow-up"></i></span>`).appendTo(novoItem)
         $(novoItem).appendTo('ul')
-        $('#inserir').val('') //CLEAN FORM
+        $('#inserir').val('') //clean form
 
         
         $('p').click(function(){

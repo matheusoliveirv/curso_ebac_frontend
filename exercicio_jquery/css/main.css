@@ -46,7 +46,6 @@ header .newTodo{
     gap: .5rem;
 }
 
-
 header .newTodo input,
 header .newTodo button.btnAdd{
     font-size: 1rem;
@@ -78,11 +77,12 @@ header .newTodo button.btnAdd{
 }
 .container .todoArea{
     background-color: var(--dark-container);
-    width: 50vw;
+    width: 40vw;
+    min-width: 27rem;
     height: 30rem;
     border-radius: 1.5rem;
     padding: 1rem 4rem;
-    overflow: auto;
+    overflow-x: auto;
     position: relative;
 }
 .container .todoArea .tasks{
@@ -97,7 +97,8 @@ ul{
     gap: 1rem;
 }
 li{
-    width: 40vw;
+    width: 30vw;
+    min-width: 20rem;
     list-style-type: none;
     padding: 1rem 2rem;
     display: flex;
