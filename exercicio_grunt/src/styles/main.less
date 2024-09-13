@@ -1,0 +1,45 @@
+@fontPrincipal: Roboto, sans-serif;
+@backgroundColor: #CCC;
+@textColor: #000;
+@buttonColor: #FBA919;
+@buttonHover: #E78724;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontPrincipal;
+}
+body{
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    .container{
+        display: flex;
+        transition: all ease .3s;
+    }
+}
+button{
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: @buttonColor;
+    border: 6px solid @textColor;
+    transition: all ease .2s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @buttonHover;
+        border: 6px solid @textColor;
+    }
+}
+.opaco{
+    opacity: .5;
+}
